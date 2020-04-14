@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
+	<link href="fonts/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<script>
+		function view() {
+		    let list = document.getElementById('ul-menu');
+		    if(list.style.display != 'block') {
+		        list.style.display = 'block';
+		    } else {
+		    	list.style.display = 'none';
+		    }
+		        
+		}
+	</script>
+	<meta charset="UTF-8">
+	<title>Scar</title>
+</head>
+<body>
+	<header>
+		<div class="left">
+			<div class="text"><a href="main.html"><span class="logo">Scar</span><span class="beta">.beta</span></a></div>
+		</div>
+		<div class="right">
+			<div class="menu">
+				<i class="fas fa-sitemap" onclick="view()"></i>
+			</div>
+		</div>
+		<div class="center">
+			<span>Главная</span>
+		</div>
+	</header>
+	<ul id="ul-menu">
+		<li class="list-menu" id="auth"><a href="auth.html">auth</a></li>
+		<li class="list-menu" id="reg"><a href="reg.html">reg</a></li>
+	</ul>
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
